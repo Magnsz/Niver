@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feliz Aniversário, Aninha!</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: #ff3366;
+        }
+
+        .message {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .confetti-container {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .confetti {
+            width: 10px;
+            height: 10px;
+            background-color: #ffcc33;
+            position: absolute;
+            animation: fall 1s linear infinite;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            max-height: 200px;
+            margin: 10px;
+        }
+
+        .image-container.left {
+            position: absolute;
+            left: 0;
+        }
+
+        .image-container.right {
+            position: absolute;
+            right: 0;
+        }
+
+        @keyframes fall {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="confetti-container" id="confetti-container"></div>
+    <h1>Feliz Aniversário, Aninha!</h1>
+    <div class="message">
+        <p>Que este dia seja mágico e cheio de alegria!</p>
+        <p>Espero que todos os seus desejos se realizem e que vc seja mt feliz! XD</p>
+    </div>
+    <div class="image-container left">
+        <img src="img/1.jpg" alt="Imagem 1" />
+        <img src="img/2.jpg" alt="Imagem 2" />
+    </div>
+    <div class="image-container right">
+        <img src="img/3.jpg" alt="Imagem 3" />
+        <img src="img/4.jpg" alt="Imagem 4" />
+    </div>
+    <div class="image-container">
+        <img src="img/5.jpg" alt="Imagem 5" />
+    </div>
+    <script>
+        function createConfetti() {
+            const confettiContainer = document.getElementById('confetti-container');
+            const colors = ['#ffcc33', '#ff3366', '#33cc33', '#3399ff', '#9966cc'];
+
+            for (let i = 0; i < 100; i++) {
+                const confettiPiece = document.createElement('div');
+                confettiPiece.className = 'confetti';
+                confettiPiece.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confettiPiece.style.left = `${Math.random() * 100}%`;
+                confettiPiece.style.animationDelay = `${Math.random()}s`;
+                confettiContainer.appendChild(confettiPiece);
+            }
+        }
+
+        createConfetti();
+    </script>
+</body>
+</html>
