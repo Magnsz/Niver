@@ -8,8 +8,11 @@
         flex-direction: column; /* Coloca as imagens em uma coluna */
         align-items: center; /* Centraliza as imagens na coluna */
         margin-top: 20px; /* Espaço acima das imagens */
-        position: static; /* Remove a posição absoluta que estava empurrando as imagens para cima */
-        left: 0; /* Defina a posição esquerda como 0 para centralizar as imagens */
-        right: 0; /* Defina a posição direita como 0 para centralizar as imagens */
+    }
+
+    .image-container.left, .image-container.right {
+        position: static; /* Remove a posição absoluta das imagens */
+        left: 0;
+        right: 0;
     }
 }
