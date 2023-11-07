@@ -1,3 +1,4 @@
+/* Estilos para telas menores (celulares) */
 @media (max-width: 768px) {
     .message {
         text-align: center; /* Centraliza o texto da mensagem */
@@ -8,11 +9,7 @@
         flex-direction: column; /* Coloca as imagens em uma coluna */
         align-items: center; /* Centraliza as imagens na coluna */
         margin-top: 20px; /* Espaço acima das imagens */
-    }
-
-    .image-container.left, .image-container.right {
-        position: static; /* Remove a posição absoluta das imagens */
-        left: 0;
-        right: 0;
+        max-height: 400px; /* Altura máxima do contêiner de imagens */
+        overflow-y: auto; /* Adiciona uma barra de rolagem vertical */
     }
 }
