@@ -1,24 +1,3 @@
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    overflow: hidden;
-}
-
-h1 {
-    color: #ff3366;
-}
-
-.message {
-    font-size: 24px;
-    text-align: center;
-    margin-top: 20px;
-}
-
 .image-container {
     display: flex;
     justify-content: center;
@@ -33,39 +12,17 @@ h1 {
     margin: 10px;
 }
 
+
 /* Estilos para telas menores (celulares) */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 24px; /* Reduz o tamanho da fonte do título */
-    }
-
     .message {
-        font-size: 16px; /* Reduz o tamanho da fonte da mensagem */
-        margin-top: 10px;
+        text-align: center; /* Centraliza o texto da mensagem */
     }
-}
-/* Estilos gerais */
-/* ... Seus estilos existentes ... */
 
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    flex-wrap: wrap; /* Permite que as imagens se ajustem em telas menores */
-}
-
-.image-container img {
-    max-width: 100%;
-    max-height: 200px;
-    margin: 10px;
-}
-
-/* Estilos para telas menores (celulares) */
-@media (max-width: 768px) {
     .image-container {
+        display: flex;
         flex-direction: column; /* Coloca as imagens em uma coluna */
         align-items: center; /* Centraliza as imagens na coluna */
+        margin-top: 20px; /* Espaço acima das imagens */
     }
 }
-
