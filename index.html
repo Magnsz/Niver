@@ -13,28 +13,6 @@
             font-family: Arial, sans-serif;
             overflow: hidden;
         }
-        
-    @media (max-width: 768px) {
-    body {
-        align-items: flex-start; /* Alinhe o conteúdo no topo */
-    }
-
-    .confetti-container {
-        display: none; /* Oculte o confete em telas pequenas para melhor legibilidade */
-    }
-
-    .image-container {
-        display: flex;
-        flex-wrap: wrap; /* Quebre as imagens em várias linhas */
-        justify-content: center;
-    }
-
-    .image-container img {
-        max-width: 100%;
-        max-height: auto;
-        margin: 10px;
-    }
-}
 
 
         h1 {
@@ -93,6 +71,7 @@
                 transform: translateY(100vh) rotate(360deg);
             }
         }
+
     </style>
 </head>
 <body>
@@ -131,4 +110,5 @@
         createConfetti();
     </script>
 </body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </html>
