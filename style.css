@@ -1,15 +1,43 @@
+message {
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 200px;
+    margin: 10px;
+}
+
+.image-container.left {
+    position: absolute;
+    left: 0;
+}
+
+.image-container.right {
+    position: absolute;
+    right: 0;
+}
+
 /* Estilos para telas menores (celulares) */
 @media (max-width: 768px) {
     .message {
-        text-align: center; /* Centraliza o texto da mensagem */
+        text-align: center;
     }
 
     .image-container {
         display: flex;
         flex-direction: column; /* Coloca as imagens em uma coluna */
         align-items: center; /* Centraliza as imagens na coluna */
-        margin-top: 20px; /* Espaço acima das imagens */
-        max-height: 400px; /* Altura máxima do contêiner de imagens */
-        overflow-y: auto; /* Adiciona uma barra de rolagem vertical */
+        margin-top: 20px;
+        position: static; /* Remove a posição absoluta que estava empurrando as imagens para cima */
+        left: 0;
+        right: 0;
     }
 }
