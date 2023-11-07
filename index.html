@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Feliz Aniversário, Aninha!</title>
     <style>
         body {
@@ -9,18 +10,18 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #252424;
+            background-color: #f0f0f0;
             font-family: Arial, sans-serif;
             overflow: hidden;
         }
 
+
         h1 {
             color: #ff3366;
-            font-size: 32px; /* Aumenta o tamanho da fonte para dispositivos móveis */
         }
 
         .message {
-            font-size: 20px; /* Aumenta o tamanho da fonte para dispositivos móveis */
+            font-size: 24px;
             text-align: center;
             margin-top: 20px;
         }
@@ -30,7 +31,6 @@
             top: 0;
             width: 100%;
             height: 100%;
-            display: none; /* Oculta o confete em telas pequenas */
         }
 
         .confetti {
@@ -46,7 +46,6 @@
             justify-content: center;
             align-items: center;
             margin-top: 20px;
-            flex-wrap: wrap; /* Permite que as imagens se ajustem em telas menores */
         }
 
         .image-container img {
@@ -74,22 +73,6 @@
             }
         }
 
-        /* Estilos para telas menores (celulares) */
-        @media (max-width: 768px) {
-            .message {
-                text-align: center; /* Centraliza o texto da mensagem */
-            }
-
-            .confetti-container {
-                display: none; /* Oculta o confete em telas pequenas */
-            }
-
-            .image-container {
-                display: flex;
-                flex-direction: column; /* Coloca as imagens em uma coluna */
-                align-items: center; /* Centraliza as imagens na coluna */
-            }
-        }
     </style>
 </head>
 <body>
@@ -97,7 +80,7 @@
     <h1>Feliz Aniversário, Aninha!</h1>
     <div class="message">
         <p>Que este dia seja mágico e cheio de alegria!</p>
-        <p>Espero que todos os seus desejos se realizem e que você seja muito feliz! XD</p>
+        <p>Espero que todos os seus desejos se realizem e que vc seja mt feliz! XD</p>
     </div>
     <div class="image-container left">
         <img src="img/1.jpg" alt="Imagem 1" />
