@@ -9,18 +9,19 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
             background-color: #f0f0f0;
             font-family: Arial, sans-serif;
             overflow: hidden;
+            margin: 0;
         }
 
         h1 {
             color: #ff3366;
+            font-size: 28px; /* Aumentar o tamanho da fonte para dispositivos móveis */
         }
 
         .message {
-            font-size: 24px;
+            font-size: 20px; /* Aumentar o tamanho da fonte para dispositivos móveis */
             text-align: center;
             margin-top: 20px;
         }
@@ -46,13 +47,14 @@
             align-items: center;
             flex-wrap: wrap;
             margin-top: 20px;
+            overflow: scroll; /* Habilitar a rolagem para dispositivos móveis */
         }
 
         .image-container img {
             max-width: 100%;
             width: auto;
             height: auto;
-            max-height: 200px;
+            max-height: 250px; /* Aumentar o tamanho máximo das imagens para dispositivos móveis */
             margin: 10px;
         }
 
@@ -63,26 +65,6 @@
             }
             100% {
                 transform: translateY(100vh) rotate(360deg);
-            }
-        }
-
-        /* Estilos para telas menores (celulares) */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 24px; /* Reduz o tamanho da fonte do título */
-            }
-
-            .message {
-                font-size: 18px; /* Reduz o tamanho da fonte da mensagem */
-            }
-
-            .image-container {
-                margin-top: 10px; /* Espaço menor acima das imagens */
-            }
-
-            .image-container img {
-                max-height: 150px; /* Reduz o tamanho máximo das imagens */
-                margin: 5px; /* Espaçamento menor entre as imagens */
             }
         }
     </style>
