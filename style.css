@@ -8,6 +8,7 @@ h1 {
     color: #ff3366;
     text-align: center;
     margin-top: 10px;
+    font-size: 24px; /* Tamanho do texto para desktop */
 }
 
 .message {
@@ -16,8 +17,8 @@ h1 {
     margin: 10px;
 }
 
-#confetti-container {
-    position: absolute;
+.confetti-container {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -33,4 +34,15 @@ h1 {
     max-width: 100%;
     max-height: 200px;
     margin: 10px;
+}
+
+/* Estilos para telas menores (celulares) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 18px; /* Tamanho do texto para dispositivos móveis */
+    }
+
+    .message {
+        font-size: 14px; /* Tamanho do texto para dispositivos móveis */
+    }
 }
